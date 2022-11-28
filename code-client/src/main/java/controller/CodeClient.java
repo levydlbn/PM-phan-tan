@@ -3,13 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package com.mycompany.code.server;
+package controller;
 
 /**
  *
  * @author 84965
  */
-public class CodeServer {
+public class CodeClient {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
