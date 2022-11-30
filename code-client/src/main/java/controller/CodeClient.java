@@ -10,6 +10,7 @@ package controller;
  * @author 84965
  */
 import javax.swing.JFrame;
+import model.user;
 import view.LoginFrm;
 import view.RegisterFrm;
 import view.RoomListFrm;
@@ -27,6 +28,8 @@ public class CodeClient {
         ROOMNAMERM,
         ROOMLIST,
     }
+    
+    public static User user;
      
     public static LoginFrm loginFrm;
     public static RegisterFrm registerFrm;
