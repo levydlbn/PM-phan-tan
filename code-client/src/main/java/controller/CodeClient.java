@@ -9,6 +9,10 @@ package controller;
  *
  * @author 84965
  */
+
+import javax.swing.JFrame;
+
+
 public class CodeClient {
 
     public static void main(String[] args) {
