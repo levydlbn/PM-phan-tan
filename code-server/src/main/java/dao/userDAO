@@ -110,7 +110,32 @@ public class UserDAO extends DAO{
         return false;
     }
  
- 
+ public void updateToOnline(int ID) {
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement("UPDATE user1\n"
+                    + "SET IsOnline = 1\n"
+                    + "WHERE ID = ?");
+            preparedStatement.setInt(1, ID);
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
+    public void updateToOffline(int ID) {
+        try {
+            PreparedStatement preparedStatement = con.prepareStatement("UPDATE user1\n"
+                    + "SET IsOnline = 0\n"
+                    + "WHERE ID = ?");
+            preparedStatement.setInt(1, ID);
+            System.out.println(preparedStatement);
+            preparedStatement.executeUpdate();
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
  public void updateToOnline(int ID) {
         try {
             PreparedStatement preparedStatement = con.prepareStatement("UPDATE user1\n"
